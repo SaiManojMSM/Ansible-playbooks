@@ -1,0 +1,25 @@
+---
+- hosts: webservers
+  user: ansible
+  become: true
+  connection: ssh
+  tasks:
+ 
+  - name: Install Python on all Host Servers
+    action: yum pkg=python3 state=present
+    ignore_errors: yes
+ 
+  - name: Install Java on all Host Servers
+    action: yum pkg=java-21-amazon-corretto-devel state=present
+    ignore_errors: yes
+ 
+  - name: Install HTTPD webserver on all Host Servers
+    action: yum pkg=httpd state=present
+    ignore_errors: yes
+ 
+  - name: Start the web server on all Host Servers
+    action: service name=httpd state=started
+ 
+  - name: Stop the web server on all Host Servers
+    action: service name=httpd state=stopped
+    
