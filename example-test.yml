@@ -2,7 +2,7 @@
 - hosts: webservers
   user: ansible
   become: true
-  connections: ssh
+  connection: ssh
   tasks: 
 
      - name: Install Git on Host Machines
