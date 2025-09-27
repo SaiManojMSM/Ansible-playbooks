@@ -46,7 +46,7 @@
 
       copy:
 
-        src: "/home/ansible/Flipkart-Clone/"
+        src: "/home/ansible/flipkart-Clone/"
 
         dest: "/var/www/html/"
 
