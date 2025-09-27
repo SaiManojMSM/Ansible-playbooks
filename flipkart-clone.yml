@@ -38,7 +38,7 @@
 
         dest: "/home/ansible/Flipkart-Clone"
 
-        version: master
+        version: main
 
         force: yes
 
