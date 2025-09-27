@@ -46,7 +46,7 @@
 
       copy:
 
-        src: "/home/ansible/flipkart-clone/"
+        src: "C:\Users\samanjul\Ansible-playbooks"
 
         dest: "/var/www/html/"
 
